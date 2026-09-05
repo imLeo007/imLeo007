@@ -70,7 +70,7 @@ https://user-profile-cache-api.onrender.com/docs
 
 ---
 
-### AI Tutor Lite
+### Pocket Tutor
 
 A small AI tutoring application where users can sign in, ask questions, and keep their previous conversations.
 
@@ -87,7 +87,7 @@ The model generates the answer, while the backend handles:
 This became the bridge between my backend development work and the RAG systems I started building afterward.
 
  **Repository**
-https://github.com/imLeo007/ai-tutor-lite-v1
+https://github.com/imLeo007/pocket-Tutor
 
 ---
 
