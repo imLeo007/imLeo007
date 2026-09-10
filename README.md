@@ -28,13 +28,13 @@ The pipeline was optimized from earlier 20–30 second response times to approxi
 
 **Repository**  https://github.com/imLeo007/groundforge-rag
 
+---
+
 ### User Profile Cache API
 
 A backend API built to understand how caching can make repeated reads faster while keeping data correct.
 
 The main lesson from this project was simple:
-
-> Performance is useful only when correctness is preserved.
 
 It helped me understand cache hits, cache misses, expiration, invalidation, database consistency, and multi-service backend applications.
 
