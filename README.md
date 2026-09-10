@@ -16,41 +16,18 @@ Now I am applying that foundation to AI systems, especially Retrieval-Augmented 
 
 ## What I'm Building
 
-### RAG From Scratch
+### GroundForge — Production RAG
 
-A document question-answering system built from first principles to understand how retrieval systems actually work.
+A document question-answering backend that processes uploaded PDFs and answers questions using information retrieved directly from those documents.
 
-Instead of starting with orchestration frameworks, I built the pipeline step by step and gradually improved:
+Document processing runs in the background, allowing uploads to return immediately while parsing, chunking, and storage continue independently.
 
-* how documents are processed
-* how relevant information is found
-* how results are ranked
-* how larger context is recovered
-* how unnecessary context is removed
-* how final answers stay grounded in the source
+The system supports follow-up conversations, combines multiple retrieval strategies to find relevant information, and generates answers grounded in the retrieved document context.
 
-The project has now progressed through multiple versions, with each version adding one major idea.
+The pipeline was optimized from earlier 20–30 second response times to approximately 4–5 seconds for complete question answering.
 
-**Current progression:**
-
-```text
-Basic RAG
-   ↓
-Hybrid Retrieval
-   ↓
-Reranking
-   ↓
-Metadata Filtering
-   ↓
-Parent-Child Retrieval
-   ↓
-Context Compression
-```
-
-🔗 **Repository**
-https://github.com/imLeo007/rag-from-scratch-v7
-
----
+🔗 **Repository**  
+https://github.com/imLeo007/groundforge-rag
 
 ### ⚡ User Profile Cache API
 
