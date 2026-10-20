@@ -16,6 +16,20 @@ Now I am applying that foundation to AI systems, especially Retrieval-Augmented 
 
 ## What I'm Building
 
+### CodePilot — Autonomous Debugging Agent
+
+An autonomous software debugging agent that diagnoses failing test suites, inspects repository codebases, and applies surgical code edits to repair bugs.
+
+Execution pauses automatically on destructive edits, allowing developers to review syntax-highlighted diffs and authorize changes through an interactive terminal interface before code is written to disk.
+
+Replaces full-file overwrites with character-exact snippet replacement, immediately re-running tests inside an isolated container sandbox to verify each fix without regressions.
+
+Persists an immutable audit trail directly to PostgreSQL, logging the complete unified diff, file path, timestamp, and technical rationale for every applied modification.
+
+**Repository**: https://github.com/imLeo007/CodePilot
+
+---
+
 ### GroundForge — Production RAG
 
 A document question-answering backend that processes uploaded PDFs and answers questions using information retrieved directly from those documents.
@@ -30,7 +44,7 @@ The pipeline was optimized from earlier 20–30 second response times to approxi
 
 ---
 
-### User Profile Cache API
+### User Profile Cache API - Caching System
 
 A backend API built to understand how caching can make repeated reads faster while keeping data correct.
 
@@ -46,7 +60,7 @@ https://user-profile-cache-api.onrender.com/docs
 
 ---
 
-### Pocket Tutor
+### Pocket Tutor - Simple Chatbot
 
 A small AI tutoring application where users can sign in, ask questions, and keep their previous conversations.
 
@@ -125,20 +139,20 @@ This is why I am building RAG systems from scratch before depending heavily on h
 
 ## Currently Learning
 
-My current focus is on improving retrieval and context quality in AI applications.
+My current focus is on building autonomous Agentic workflows.
 
 I am working toward:
 
 ```text
-Better Retrieval
+Agentic Orchestration
       ↓
-Context Quality
+Tool Calling
       ↓
-RAG Evaluation
+RAG
       ↓
 Memory
       ↓
-Tool Calling
+HITL
       ↓
 Reliable AI Workflows
 ```
@@ -159,7 +173,7 @@ My main focus is becoming stronger at:
 * retrieval systems
 * debugging and performance
 * AI application architecture
-* building reliable products from first principles
+* building AI Agents
 
 ---
 
