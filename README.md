@@ -16,7 +16,7 @@ Now I am applying that foundation to AI systems, especially Retrieval-Augmented 
 
 ## What I'm Building
 
-### CodePilot — Autonomous Debugging Agent
+### CodePilot - Autonomous Debugging Agent
 
 An autonomous software debugging agent that diagnoses failing test suites, inspects repository codebases, and applies surgical code edits to repair bugs.
 
@@ -26,21 +26,33 @@ Replaces full-file overwrites with character-exact snippet replacement, immediat
 
 Persists an immutable audit trail directly to PostgreSQL, logging the complete unified diff, file path, timestamp, and technical rationale for every applied modification.
 
-**Repository**: https://github.com/imLeo007/CodePilot
+**Repository**: https://github.com/imLeo007/codepilot
 
 ---
 
-### GroundForge — Production RAG
+### DocPilot - LightWeight RAG Engine
 
-A document question-answering backend that processes uploaded PDFs and answers questions using information retrieved directly from those documents.
+A fast & lightweight retrieval engine prioritizing speed and memory.
 
 Document processing runs in the background, allowing uploads to return immediately while parsing, chunking, and storage continue independently.
 
-The system supports follow-up conversations, combines multiple retrieval strategies to find relevant information, and generates answers grounded in the retrieved document context.
+This takes up to 300mb active ram footprint, Performance was evaluated using Deepevals which resulted in 90% accuracy each time.
 
-The pipeline was optimized from earlier 20–30 second response times to approximately 4–5 seconds for complete question answering.
+The main purpose for this project is that, it can be used as a tool for any AI agent.
 
-**Repository**  https://github.com/imLeo007/groundforge-rag
+**Repository**  https://github.com/imLeo007/docpilot
+
+---
+
+### GroundForge - Production RAG Prototype
+
+A heavy weight RAG engine designed to use as a primary source for my retrieval services.
+
+Because of heavy memory footprint and dependency overhead this is flagged as a prototype, it uses Docling which is a production grade framework for document processing.
+
+Since it demands heavy torch dependencies i stripped out all of it and replaced it with small lightweight alternatives that's where i got docpilot.
+
+**Repository**  https://github.com/imLeo007/groundforge
 
 ---
 
@@ -53,7 +65,7 @@ The main lesson from this project was simple:
 It helped me understand cache hits, cache misses, expiration, invalidation, database consistency, and multi-service backend applications.
 
  **Repository**
-https://github.com/imLeo007/user-profile-cache-api
+https://github.com/imLeo007/profile-cache
 
  **Live API**
 https://user-profile-cache-api.onrender.com/docs
@@ -64,7 +76,7 @@ https://user-profile-cache-api.onrender.com/docs
 
 A small AI tutoring application where users can sign in, ask questions, and keep their previous conversations.
 
-This project helped me understand how an AI model fits inside a normal application.
+This is my first rookie project using AI.
 
 The model generates the answer, while the backend handles:
 
